@@ -1,0 +1,15 @@
+import React, { Component } from 'react';
+import '../App.css';
+
+class ProductText extends Component {
+  render() {
+    return (
+      <div className="Product">
+          <p>{this.props.prodName}</p>
+          <span className="price" >${this.props.price} </span>
+      </div>
+    );
+  }
+}
+
+export default ProductText;

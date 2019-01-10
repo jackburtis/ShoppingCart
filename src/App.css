@@ -1,25 +1,63 @@
-.App {
-  text-align: center;
+.Shelf {
+ width: 85%;
+  float: left;
+  min-height: 600px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Product-Image {
 }
 
-.App-header {
+.Shelf-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
+.Shelf-link {
   color: #61dafb;
+}
+
+.Cart {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 450px;
+  height: 50%;
+  background-color: #1b1a20;
+  box-sizing: border-box;
+  text-align: center;
+
+  transition: right 0.2s;
+}
+
+.shelf-item-1 {
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
+.shelf-item-2 {
+    float: right;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
+.shelf-item-img{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+  width: 50%;
+}
+.price {
+  color: gold
 }
 
 @keyframes App-logo-spin {
