@@ -3,7 +3,6 @@ import logo from '../images/5619496040738316_1.jpg';
 import Product from './Product.js'
 import Cart from './Cart.js'
 import '../App.css';
-import json from '../products.js'
 
 class Shelf extends Component {
   render() {
@@ -28,60 +27,69 @@ class Shelf extends Component {
       "currencyFormat": "$",
       "isFreeShipping": true
       };
+      const results = [];
+      this.props.js.products.forEach((product) => {
+        results.push(
+          <Product 
+          prod = { product }
+          />
+          );
+          });
       return(
       <div className="Shelf">
         <header className="Shelf-header">
           <Cart />
+          { results }
           <Product 
-          prod = { json.products[0] }
+          prod = { this.props.js.products[0] }
           />
           <Product 
-          prod = { json.products[1] }
+          prod = { this.props.js.products[1] }
           />
           <Product 
-          prod = { json.products[2] }
+          prod = { this.props.js.products[2] }
           />
           <Product 
-          prod = { json.products[3] }
+          prod = { this.props.js.products[3] }
           />
           <Product 
-          prod = { json.products[4] }
+          prod = { this.props.js.products[4] }
           />
           <Product 
-          prod = { json.products[5] }
+          prod = { this.props.js.products[5] }
           />
           <Product 
-          prod = { json.products[6] }
+          prod = { this.props.js.products[6] }
           />
           <Product 
-          prod = { json.products[7] }
+          prod = { this.props.js.products[7] }
           />
           <Product 
-          prod = { json.products[8] }
+          prod = { this.props.js.products[8] }
           />
 		<Product
-          prod = { json.products[9] }
+          prod = { this.props.js.products[9] }
           />
           <Product 
-          prod = { json.products[10] }
+          prod = { this.props.js.products[10] }
           />
           <Product 
-          prod = { json.products[11] }
+          prod = { this.props.js.products[11] }
           />
           <Product 
-          prod = { json.products[12] }
+          prod = { this.props.js.products[12] }
           />
           <Product 
-          prod = { json.products[13] }
+          prod = { this.props.js.products[13] }
           />
           <Product 
-          prod = { json.products[14] }
+          prod = { this.props.js.products[14] }
           />
           <Product 
-          prod = { json.products[15] }
+          prod = { this.props.js.products[15] }
           />
           <Product 
-          prod = { json.products[16] }
+          prod = { this.props.js.products[16] }
           />
         </header>
       </div>
