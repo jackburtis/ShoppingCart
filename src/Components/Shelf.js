@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../images/5619496040738316_1.jpg';
 import Product from './Product.js'
 import Cart from './Cart.js'
 import '../App.scss';
@@ -13,6 +12,7 @@ class Shelf extends Component {
           prod = { product }
           />
           );
+        console.log(product);
           });
       return(
       <div className="Shelf">
