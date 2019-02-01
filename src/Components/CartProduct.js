@@ -4,32 +4,23 @@ import '../App.scss';
 
 
 class CartProduct extends Component {
-  /*static propTypes = {
-    product: PropTypes.object.isRequired,
-  };
-*/
+
+
   render() {
-    const { product } = this.props;
+    const { product, removeProduct } = this.props;
 
     const classes = ['shelf-item'];
 
     return (
       <div >
         <div
-          className="shelf-item__del"
-          onMouseOver={() => this.handleMouseOver()}
-          onMouseOut={() => this.handleMouseOut()}
-       //   onClick={() => removeProduct(product)}
-        />
-        <div className="cart-item">
-          <p className="title">{product.title}</p>
-            <img src={ require( "/Users/jackburtis/Documents/EECS394/new-shopping-cart/src/images/" + this.props.product.sku + "_1.jpg" )} className = "shelf-item-img" alt="ShirtImage" />
-            <ProductText
-                prodName = { this.props.product.title }
-                price = { this.props.product.price }
-            />
+          className="cart-item__del"
+          onClick={() => removeProduct(product)}
+        >
         </div>
-        <div className="shelf-item__price">
+        <div className="cart-item"><img src={ require( "/Users/jackburtis/Documents/EECS394/new-shopping-cart/src/images/" + this.props.product.sku + "_1.jpg" )} className = "cart-item__img" alt="ShirtImage" />
+            <p className="title">{product.title}</p>
+
         </div>
       </div>
     );

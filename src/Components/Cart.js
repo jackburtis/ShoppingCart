@@ -49,13 +49,14 @@ class Cart extends Component {
     };
     /**/
     removeProduct = product => {
-        const {cartProducts, updateCart} = this.props;
-
+    //    const {cartProducts, updateCart} = this.props;
+        const cartProducts = this.props.products;
         const index = cartProducts.findIndex(p => p.id === product.id);
         if (index >= 0) {
             cartProducts.splice(index, 1);
-            updateCart(cartProducts);
+        //    updateCart(cartProducts);
         }
+        this.openFloatCart();
     };
 
     render() {
@@ -65,7 +66,7 @@ class Cart extends Component {
         const products = cartProducts.map(p => {
             return (
             //    <CartProduct product={p} removeProduct={removeProduct} key={p.id}/>
-                <CartProduct product={p}/>
+                <CartProduct product={p} removeProduct = {this.removeProduct}/>
             );
         });
         if (this.state.open) {
