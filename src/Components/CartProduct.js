@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import ProductText from "./ProductText.js";
+import '../App.scss';
 
 
 class CartProduct extends Component {
-  static propTypes = {
+  /*static propTypes = {
     product: PropTypes.object.isRequired,
   };
-
+*/
   render() {
     const { product } = this.props;
 
@@ -20,11 +21,15 @@ class CartProduct extends Component {
           onMouseOut={() => this.handleMouseOut()}
        //   onClick={() => removeProduct(product)}
         />
-        <div className="shelf-item__details">
+        <div className="cart-item">
           <p className="title">{product.title}</p>
+            <img src={ require( "/Users/jackburtis/Documents/EECS394/new-shopping-cart/src/images/" + this.props.product.sku + "_1.jpg" )} className = "shelf-item-img" alt="ShirtImage" />
+            <ProductText
+                prodName = { this.props.product.title }
+                price = { this.props.product.price }
+            />
         </div>
         <div className="shelf-item__price">
-          <p>{' ${formatPrice(product.price)'}</p>
         </div>
       </div>
     );

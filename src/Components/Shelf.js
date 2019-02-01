@@ -4,12 +4,26 @@ import Cart from './Cart.js'
 import '../App.scss';
 
 class Shelf extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            products: []
+        };
+        this.products = [];
+        this.js = this.props.js;
+    }
+    addToCart = (product) => {
+        let products = this.state.products;//this.state.products.slice();
+       products.push(product);
+       this.setState({products: products});
+    }
   render() {
       const results = [];
-      this.props.js.products.forEach((product) => {
+      this.js.products.forEach((product) => {
         results.push(
           <Product 
           prod = { product }
+          addToCart = {this.addToCart}
           />
           );
         console.log(product);
@@ -18,7 +32,7 @@ class Shelf extends Component {
       <div className="Shelf">
         <header className="Shelf-header">
           { results }
-          <Cart />
+          <Cart products={this.state.products}/>
         </header>
       </div>
       );
