@@ -10,7 +10,8 @@ export default
       "price": 10.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"small"
     },
 
     {
@@ -22,7 +23,8 @@ export default
       "price": 29.45,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"medium"
     },
 
     {
@@ -34,7 +36,8 @@ export default
       "price": 9.0,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"large"
     },
 
     {
@@ -46,7 +49,8 @@ export default
       "price": 14.0,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"small"
     },
 
     {
@@ -58,7 +62,8 @@ export default
       "price": 13.25,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"small"
     },
 
     {
@@ -70,7 +75,8 @@ export default
       "price": 75.0,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"medium"
     },
 
     {
@@ -82,7 +88,8 @@ export default
       "price": 10.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"medium"
     },
 
     {
@@ -94,7 +101,8 @@ export default
       "price": 10.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"large"
     },
 
     {
@@ -106,7 +114,8 @@ export default
       "price": 14.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"small"
     },
 
     {
@@ -118,7 +127,8 @@ export default
       "price": 14.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"large"
     },
 
     {
@@ -130,7 +140,8 @@ export default
       "price": 25.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": false
+      "isFreeShipping": false,
+      "size":"small"
     },
 
     {
@@ -142,7 +153,8 @@ export default
       "price": 10.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": false
+      "isFreeShipping": false,
+      "size":"medium"
     },
 
     {
@@ -154,7 +166,8 @@ export default
       "price": 49.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"large"
     },
 
     {
@@ -166,7 +179,8 @@ export default
       "price": 22.5,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"medium"
     },
 
     {
@@ -178,7 +192,8 @@ export default
       "price": 18.7,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": false
+      "isFreeShipping": false,
+      "size":"small"
     },
 
     {
@@ -190,7 +205,8 @@ export default
       "price": 134.9,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"large"
     },
 
     {
@@ -202,7 +218,8 @@ export default
       "price": 49.0,
       "currencyId": "USD",
       "currencyFormat": "$",
-      "isFreeShipping": true
+      "isFreeShipping": true,
+      "size":"large"
     }
   ]
 }

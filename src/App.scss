@@ -73,8 +73,8 @@ background-color: #4CAF50; /* Green */
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
-    border: 1px solid black;
-    outline-style: solid;
+  /*  border: 1px solid black;
+    outline-style: solid;*/
     
 }
 .shelf-item-img{
@@ -144,7 +144,7 @@ background-color: #4CAF50; /* Green */
   margin-bottom: 30px;
   border: 1px solid black;
   outline-style: solid;
-  font-size: 15px;
+  font-size: 13px;
   &__del {
     width: 16px;
     height: 16px;
@@ -168,6 +168,9 @@ background-color: #4CAF50; /* Green */
       padding: 10px;
     float:left;
   }
+}
+.filter {
+  color:black;
 }
 @keyframes App-logo-spin {
   from {

@@ -12,12 +12,25 @@ class Cart extends Component {
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.products !== this.props.products) {
+            console.log("adding product");
             this.addProduct(nextProps.products);
         }
 
         if (nextProps.productToRemove !== this.props.productToRemove) {
+            console.log("removing product");
             this.removeProduct(nextProps.productToRemove);
         }
+    }
+
+    updateCart = (cartProducts) => {
+        console.log("Here is the price:" + this.price);
+        let sum = 0;
+        cartProducts.forEach()(p => {
+            sum += p.price;
+            }
+        )
+        this.price = sum;
+        console.log("Here is the price:" + this.price);
     }
 
     openFloatCart = () => {
@@ -29,7 +42,6 @@ class Cart extends Component {
     };
 
     addProduct = product => {
-        //   const { cartProducts, updateCart } = this.props;
         const cartProducts = this.props;
         let productAlreadyInCart = false;
 
@@ -40,21 +52,20 @@ class Cart extends Component {
             }
         });
 
+        this.updateCart(cartProducts);
         if (!productAlreadyInCart) {
             cartProducts.push(product);
         }
 
-        // updateCart(cartProducts);
         this.openFloatCart();
     };
     /**/
     removeProduct = product => {
-    //    const {cartProducts, updateCart} = this.props;
         const cartProducts = this.props.products;
         const index = cartProducts.findIndex(p => p.id === product.id);
         if (index >= 0) {
             cartProducts.splice(index, 1);
-        //    updateCart(cartProducts);
+            this.updateCart(cartProducts);
         }
         this.openFloatCart();
     };
@@ -80,7 +91,8 @@ class Cart extends Component {
                     </div>
 
                     <p>
-                        This is your cart
+                        This is your cart:
+                        Price: {this.price}
                     </p>
                     {products}
                 </div>

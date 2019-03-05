@@ -18,9 +18,10 @@ class CartProduct extends Component {
           onClick={() => removeProduct(product)}
         >
         </div>
-        <div className="cart-item"><img src={ require( "/Users/jackburtis/Documents/EECS394/new-shopping-cart/src/images/" + this.props.product.sku + "_1.jpg" )} className = "cart-item__img" alt="ShirtImage" />
-            <p className="title">{product.title}</p>
-
+        <div className="cart-item">
+            <img src={ require( "/Users/jackburtis/Documents/EECS394/new-shopping-cart/src/images/" + this.props.product.sku + "_1.jpg" )} className = "cart-item__img" alt="ShirtImage" />
+            <p className="title">{product.title} Price:
+                {product.price}</p>
         </div>
       </div>
     );
